@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana Ventures | Premium E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        primary: '#1E293B',
+                        secondary: '#F8FAFC',
+                        accent: '#D97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Image hover zoom */
+        .zoom-hover {
+            transition: transform 0.5s ease;
+        }
+        .zoom-hover:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-secondary text-primary font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Promotional Header -->
+    <header class="bg-primary text-white text-sm py-2 px-4 text-center w-full z-50">
+        <p class="font-medium tracking-wide">Free global shipping on all orders over $150. <a href="#" class="underline hover:text-accent transition-colors">Shop Now</a></p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 glass-effect border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Mobile menu button -->
+                <div class="flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-primary hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center justify-center sm:justify-start w-full sm:w-auto mt-1">
+                    <a href="#" class="text-2xl md:text-3xl font-serif font-bold tracking-tight text-primary">Chandana <span class="text-accent italic font-light">Ventures</span></a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex sm:space-x-8 h-full items-center">
+                    <a href="#" class="text-gray-900 border-b-2 border-primary inline-flex items-center px-1 pt-1 text-sm font-medium h-full">Home</a>
+                    <a href="#collections" class="text-gray-500 border-b-2 border-transparent hover:text-primary hover:border-gray-300 inline-flex items-center px-1 pt-1 text-sm font-medium h-full transition-colors">Collections</a>
+                    <a href="#about" class="text-gray-500 border-b-2 border-transparent hover:text-primary hover:border-gray-300 inline-flex items-center px-1 pt-1 text-sm font-medium h-full transition-colors">About Us</a>
+                </div>
+
+                <!-- Icons (Search, User, Cart) -->
+                <div class="hidden sm:flex items-center space-x-6">
+                    <button class="text-gray-400 hover:text-primary transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                    <button class="text-gray-400 hover:text-primary transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </button>
+                    <button class="text-gray-400 hover:text-primary transition-colors relative">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        <span class="absolute -top-2 -right-2 bg-accent text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white h-[80vh] min-h-[600px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1470" alt="Fashion background" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-30"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-start">
+            <div class="max-w-xl animate-[fadeIn_1s_ease-out]">
+                <span class="block text-accent font-semibold tracking-wider uppercase mb-3 text-sm">New In</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg text-balance">
+                    Elevate Your Everyday Style.
+                </h1>
+                <p class="mt-4 text-xl text-gray-100 max-w-lg mb-8 drop-shadow">
+                    Discover our latest collection blending premium comfort with uncompromised aesthetics.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#collections" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium bg-white text-primary hover:bg-gray-100 hover:scale-105 transition-all shadow-lg">
+                        Shop Collection
+                    </a>
+                    <a href="#" class="inline-flex items-center px-8 py-3 border border-white text-base font-medium text-white hover:bg-white hover:text-primary hover:scale-105 transition-all">
+                        View Lookbook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Context -->
+    <main class="flex-grow">
+        
+        <!-- Featured Categories / Collections Article -->
+        <article id="collections" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-bold text-primary sm:text-4xl">Curated Essentials</h2>
+                <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Handpicked masterpieces tailored to perfection.</p>
+                <div class="h-1 w-24 bg-accent mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-80 object-cover object-center zoom-hover">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">Bestseller</div>
+                        <!-- Quick Add Button Overlay -->
+                        <div class="absolute bottom-0 inset-x-0 bg-white/90 backdrop-blur pb-4 pt-4 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out flex justify-center">
+                            <button class="w-full bg-primary text-white py-2 font-medium hover:bg-accent transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-sm text-gray-500 mb-1">Footwear</h3>
+                        <p class="text-lg font-medium text-primary mb-2">Crimson Runner Pro</p>
+                        <p class="text-xl font-serif text-accent">$120.00</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-80 object-cover object-center zoom-hover">
+                        <div class="absolute top-4 left-4 bg-black text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">New</div>
+                        <!-- Quick Add Button Overlay -->
+                        <div class="absolute bottom-0 inset-x-0 bg-white/90 backdrop-blur pb-4 pt-4 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out flex justify-center">
+                            <button class="w-full bg-primary text-white py-2 font-medium hover:bg-accent transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-sm text-gray-500 mb-1">Accessories</h3>
+                        <p class="text-lg font-medium text-primary mb-2">Minimalist Timber Watch</p>
+                        <p class="text-xl font-serif text-accent">$245.00</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-80 object-cover object-center zoom-hover">
+                        <div class="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">Sale</div>
+                        <!-- Quick Add Button Overlay -->
+                        <div class="absolute bottom-0 inset-x-0 bg-white/90 backdrop-blur pb-4 pt-4 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out flex justify-center">
+                            <button class="w-full bg-primary text-white py-2 font-medium hover:bg-accent transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-sm text-gray-500 mb-1">Audio</h3>
+                        <p class="text-lg font-medium text-primary mb-2">Acoustic Noise Cancelling</p>
+                        <div class="flex items-center gap-2">
+                           <p class="text-xl font-serif text-accent">$180.00</p>
+                           <p class="text-sm text-gray-400 line-through">$250.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-80 object-cover object-center zoom-hover">
+                         <!-- Quick Add Button Overlay -->
+                         <div class="absolute bottom-0 inset-x-0 bg-white/90 backdrop-blur pb-4 pt-4 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out flex justify-center">
+                            <button class="w-full bg-primary text-white py-2 font-medium hover:bg-accent transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-sm text-gray-500 mb-1">Beauty</h3>
+                        <p class="text-lg font-medium text-primary mb-2">Organic Skincare Set</p>
+                        <p class="text-xl font-serif text-accent">$89.00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="inline-flex items-center justify-center px-10 py-4 border border-gray-300 shadow-sm text-base font-medium text-primary bg-white hover:bg-gray-50 hover:border-gray-400 transition-all">
+                    View All Products
+                </a>
+            </div>
+        </article>
+
+        <!-- Feature Article / About Section -->
+        <article id="about" class="bg-primary text-white py-20 px-4 sm:px-6 lg:px-8 mt-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">The Chandana Vision</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Founded on the principle that luxury isn't a price tag, it's an experience. At Chandana Ventures, we believe in creating objects that blend seamlessly into your life while quietly commanding attention.
+                        </p>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Every piece in our collection goes through rigorous design iterations. We select only the finest materials, partnering with sustainable manufacturers to bring you products you can feel proud to own.
+                        </p>
+                        <a href="#" class="inline-flex items-center pb-1 border-b-2 border-accent text-accent hover:text-white hover:border-white transition-colors uppercase tracking-widest text-sm font-semibold">
+                            Read Our Story <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                    <div class="relative h-96">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1470" alt="Store interior" class="w-full h-full object-cover">
+                        <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-accent hidden lg:block -z-10"></div>
+                        <div class="absolute -top-6 -right-6 w-48 h-48 border-2 border-accent hidden lg:block -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Newsletter Section -->
+        <section class="bg-gray-50 py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-serif font-bold text-primary mb-3">Join The Club</h3>
+                <p class="text-gray-500 mb-8">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="flex flex-col sm:flex-row max-w-md mx-auto gap-3">
+                    <input type="email" placeholder="Enter your email address" class="flex-grow px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all">
+                    <button type="button" class="bg-primary text-white px-8 py-3 font-medium hover:bg-gray-800 transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+                <!-- Branding -->
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="text-2xl font-serif font-bold tracking-tight text-primary mb-4 block">Chandana <span class="text-accent italic font-light">Ventures</span></a>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Elevating everyday objects through thoughtful design and uncompromising quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Social Icons -->
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="text-sm font-bold text-primary uppercase tracking-wider mb-4">Shop</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Bestsellers</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Footwear</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Accessories</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Sale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="text-sm font-bold text-primary uppercase tracking-wider mb-4">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="text-sm font-bold text-primary uppercase tracking-wider mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-accent text-sm transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+                <p class="text-sm text-gray-400">
+                    &copy; 2026 Chandana Ventures. All rights reserved. Built with precision.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
